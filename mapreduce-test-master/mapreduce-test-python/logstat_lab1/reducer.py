@@ -21,7 +21,7 @@ for hour_ip, count in dict_ip_count.items():
     ip = hour_ip[7:]
     count = str(count)
     if hour not in dict_hour_ipcount.keys():
-        dict_hour_ipcount[hour] = []
+        dict_hour_ipcount[hour] = [(ip,count)]
     else:
         dict_hour_ipcount[hour].append((ip, count))
 
